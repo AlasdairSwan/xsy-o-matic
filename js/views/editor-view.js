@@ -12,7 +12,8 @@
 
                 events: {
                     'blur input' : 'updateInput',
-                    'change select' : 'updateSelect'
+                    'change select' : 'updateSelect',
+                    'click .js-default' : 'xsyPreset'
                 },
 
                 tpl: _.template(pageTpl),
@@ -39,6 +40,12 @@
                         val = $el.val();
 
                     this.model.set( attr, val );
+                },
+
+                xsyPreset: function(event) {
+                    var xsy = $(event.target).data('xsy');
+                    event.preventDefault();
+                    this.model.preset(xsy);
                 }
             });
         }

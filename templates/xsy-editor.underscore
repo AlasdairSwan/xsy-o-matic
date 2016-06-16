@@ -1,4 +1,7 @@
 <form>
+    <button class="js-default" data-xsy="happy">Happy Xsy</button>
+    <button class="js-default" data-xsy="sad">Sad Xsy</button>
+
     <div class="input-wrapper">
         <label for="xsy-body-color">Body Color</label>
         <input type="text" id="xsy-body-color" data-attribute="bodyColor" value="<%- bodyColor %>">
