@@ -5,11 +5,6 @@
     </div>
 
     <div class="input-wrapper">
-        <label for="xsy-arm-color">Arm Color</label>
-        <input type="text" id="xsy-arm-color" data-attribute="armColor" value="<%- armColor %>">
-    </div>
-
-    <div class="input-wrapper">
         <label for="xsy-background">Background</label>
         <input type="text" id="xsy-background" data-attribute="background" value="<%- background %>">
     </div>
@@ -45,5 +40,37 @@
     <div class="input-wrapper">
         <label for="xsy-tongue">Tongue</label>
         <input type="text" id="xsy-tongue" data-attribute="tongue" value="<%- tongue %>">
+    </div>
+
+    <h2>Arms</h2>
+
+    <div class="input-wrapper">
+        <label for="xsy-arm-color">Color</label>
+        <input type="text" id="xsy-arm-color" data-attribute="armColor" value="<%- armColor %>">
+    </div>
+
+
+    <div class="input-wrapper">
+        <label for="xsy-arm-position">Position</label>
+        <select id="xsy-arm-position" data-attribute="armPosition">
+            <option value="up" <% if ( armPosition === 'up' ) { %>selected<% } %>>Up</option>
+            <option value="down" <% if ( armPosition === 'down' ) { %>selected<% } %>>Down</option>
+        </select>
+    </div>
+
+    <h2>Hat</h2>
+    <div class="input-wrapper">
+        <label for="xsy-hat-top">Top</label>
+        <input type="text" id="xsy-hat-top" data-attribute="hatTop" value="<%- hatTop %>">
+    </div>
+
+    <div class="input-wrapper">
+        <label for="xsy-hat-base">Base</label>
+        <input type="text" id="xsy-hat-base" data-attribute="hatBase" value="<%- hatBase %>">
+    </div>
+
+    <div class="input-wrapper">
+        <label for="xsy-hat-ribbon">Ribbon</label>
+        <input type="text" id="xsy-hat-ribbon" data-attribute="hatRibbon" value="<%- hatRibbon %>">
     </div>
 </form>
