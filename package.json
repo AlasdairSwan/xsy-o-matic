@@ -1,0 +1,27 @@
+{
+  "name": "xsy-o-matic",
+  "version": "0.0.1",
+  "description": "A JavaScript abd SVG GUI for editing Xsy",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AlasdairSwan/xsy-o-matic"
+  },
+  "keywords": [
+    "edx",
+    "open edx",
+    "javascript",
+    "Xsy"
+  ],
+  "homepage": "https://github.com/AlasdairSwan/xsy-o-matic",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "jquery": "~2.2.0",
+    "requirejs": "~2.1.22",
+    "requirejs-text": "~2.0.12",
+    "underscore": "~1.8.3"
+  }
+}
