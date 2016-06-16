@@ -1,0 +1,6 @@
+<form>
+    <label for="xsy-body-color">Body Color</label>
+    <input type="text" id="xsy-body-color" data-attribute="bodyColor" value="<%- bodyColor %>">
+    <label for="xsy-arm-color">Arm Color</label>
+    <input type="text" id="xsy-arm-color" data-attribute="armColor" value="<%- armColor %>">
+</form>

@@ -1,3 +1,19 @@
 body {
-    background: #73bde7;
+    background: #eee;
+}
+
+.canvas {
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.xsy {
+    margin: 45px 50px;
+}
+
+.title {
+    text-transform: uppercase;
+    color: #73bde7;
 }

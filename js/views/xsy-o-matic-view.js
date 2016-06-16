@@ -3,20 +3,36 @@
 
     define([
             'backbone',
-            'jquery'
+            'jquery',
+            'js/models/xsy-model',
+            'js/views/display-view',
+            'js/views/editor-view',
+            'text!templates/xsy-o-matic-view.underscore'
         ],
-        function( Backbone, $ ) {
+        function( Backbone, $, XsyModel, DisplayView, EditorView, pageTpl ) {
             return Backbone.View.extend({
                 el: '.xsy-o-matic',
 
-                //tpl: _.template(pageTpl),
+                tpl: _.template(pageTpl),
 
                 initialize: function() {
+                    this.model = new XsyModel();
                     this.render();
                 },
 
                 render: function() {
-                    this.$el.html('Backbone loading');
+                    this.$el.html( this.tpl() );
+                    this.postRender();
+                },
+
+                postRender: function() {
+                    this.displayView = new DisplayView({
+                        model: this.model
+                    });
+
+                    this.editView = new EditorView({
+                        model: this.model
+                    });
                 }
             });
         }
