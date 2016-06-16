@@ -10,6 +10,7 @@ body {
     position: relative;
     display: inline;
     float: left;
+    overflow: hidden;
 }
 
 .xsy-editor {
@@ -20,7 +21,7 @@ body {
 }
 
 .xsy {
-    margin: 45px 50px;
+    padding: 45px 50px;
 }
 
 .title {

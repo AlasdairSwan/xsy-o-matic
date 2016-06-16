@@ -19,6 +19,13 @@
 
                 render: function() {
                     this.$el.html( this.tpl( this.model.toJSON() ) );
+                    this.postRender();
+                },
+
+                postRender: function() {
+                    this.$el.css({
+                        background: this.model.get('background')
+                    });
                 }
             });
         }

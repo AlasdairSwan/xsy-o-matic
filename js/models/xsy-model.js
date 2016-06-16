@@ -6,6 +6,7 @@ define([
 
         return Backbone.Model.extend({
             defaults: {
+                background: '#fff',
                 bodyColor: '#73bde7',
                 armColor: '#73bde7',
                 eyeballColor: '#fff',

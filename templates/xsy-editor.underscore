@@ -9,6 +9,11 @@
         <input type="text" id="xsy-arm-color" data-attribute="armColor" value="<%- armColor %>">
     </div>
 
+    <div class="input-wrapper">
+        <label for="xsy-background">Background</label>
+        <input type="text" id="xsy-background" data-attribute="background" value="<%- background %>">
+    </div>
+
     
     <h2>Eyes</h2>
     <div class="input-wrapper">
