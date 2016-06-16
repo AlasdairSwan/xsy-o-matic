@@ -7,6 +7,16 @@ body {
     width: 400px;
     height: 400px;
     border-radius: 50%;
+    position: relative;
+    display: inline;
+    float: left;
+}
+
+.xsy-editor {
+    position: relative;
+    display: inline;
+    float: left;
+    width: calc(100% - 400px);
 }
 
 .xsy {
