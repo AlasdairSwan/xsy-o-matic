@@ -1,5 +1,51 @@
+.btn,
+label,
+input,
+h1,
+h2 {
+    font-family: Sans-Serif;
+}
+
 body {
-    background: #eee;
+    background: #8a8c8f;
+}
+
+fieldset {
+    background: #009de6;
+    position: relative;
+    margin: 45px 0;
+    clear: both;
+    border: none;
+    border-radius: 0 20px 20px 20px;
+}
+
+legend {
+    position: absolute;
+    top: -31px;
+    left: 0;
+    background: #d5216a;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 5px 10px;
+}
+
+label {
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    width: 400px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    font-weight: 200;
 }
 
 .canvas {
@@ -22,14 +68,34 @@ body {
 }
 
 .xsy {
-    padding: 45px 50px;
+    padding: 65px 50px 0;
 }
 
-.title {
-    text-transform: uppercase;
-    color: #73bde7;
+.input-wrapper {
+    position: relative;
+    display: inline;
+    float: left;
+    margin: 10px;
 }
 
-.input-wrapper input {
-    background-image: none;
+.btn {
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background: #009de6;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn.sad {
+    background: #d5216a;
 }

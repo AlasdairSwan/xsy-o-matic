@@ -1,79 +1,88 @@
 <form>
-    <button class="js-default" data-xsy="happy">Happy Xsy</button>
-    <button class="js-default" data-xsy="sad">Sad Xsy</button>
-
-    <div class="input-wrapper">
-        <label for="xsy-body-color">Body Color</label>
-        <input type="text" id="xsy-body-color" data-attribute="bodyColor" value="<%- bodyColor %>">
-    </div>
-
-    <div class="input-wrapper">
-        <label for="xsy-background">Background</label>
-        <input type="text" id="xsy-background" data-attribute="background" value="<%- background %>">
-    </div>
-
+    <button class="js-default btn" data-xsy="happy">Happy Xsy</button>
+    <button class="js-default btn sad" data-xsy="sad">Sad Xsy</button>
     
-    <h2>Eyes</h2>
-    <div class="input-wrapper">
-        <label for="xsy-eyeball-color">Eyeball Color</label>
-        <input type="text" id="xsy-eyeball-color" data-attribute="eyeballColor" value="<%- eyeballColor %>">
-    </div>
-    
-    <div class="input-wrapper">
-        <label for="xsy-retina-color">Retina Color</label>
-        <input type="text" id="xsy-retina-color" data-attribute="retinaColor" value="<%- retinaColor %>">
-    </div>
+    <fieldset>
+        <legend><h2>Base</h2></legend>
+        <div class="input-wrapper">
+            <label for="xsy-body-color">Body Color</label>
+            <input type="text" id="xsy-body-color" data-attribute="bodyColor" value="<%- bodyColor %>">
+        </div>
 
-    <div class="input-wrapper">
-        <label for="xsy-eyeliner-color">Eye Liner Color</label>
-        <input type="text" id="xsy-eyeliner-color" data-attribute="eyeLinerColor" value="<%- eyeLinerColor %>">
-    </div>
+        <div class="input-wrapper">
+            <label for="xsy-background">Background</label>
+            <input type="text" id="xsy-background" data-attribute="background" value="<%- background %>">
+        </div>
+    </fieldset>
 
-    <h2>Mouth</h2>
-    <div class="input-wrapper">
-        <label for="xsy-lips">Lips</label>
-        <input type="text" id="xsy-lips" data-attribute="lips" value="<%- lips %>">
-    </div>
-    
-    <div class="input-wrapper">
-        <label for="xsy-teeth">Teeth</label>
-        <input type="text" id="xsy-teeth" data-attribute="teeth" value="<%- teeth %>">
-    </div>
+    <fieldset>
+        <legend><h2>Eyes</h2></legend>
+        <div class="input-wrapper">
+            <label for="xsy-eyeball-color">Eyeball</label>
+            <input type="text" id="xsy-eyeball-color" data-attribute="eyeball" value="<%- eyeball %>">
+        </div>
+        
+        <div class="input-wrapper">
+            <label for="xsy-retina-color">Iris</label>
+            <input type="text" id="xsy-retina-color" data-attribute="iris" value="<%- iris %>">
+        </div>
 
-    <div class="input-wrapper">
-        <label for="xsy-tongue">Tongue</label>
-        <input type="text" id="xsy-tongue" data-attribute="tongue" value="<%- tongue %>">
-    </div>
+        <div class="input-wrapper">
+            <label for="xsy-eyeliner-color">Eye Liner</label>
+            <input type="text" id="xsy-eyeliner-color" data-attribute="eyeLiner" value="<%- eyeLiner %>">
+        </div>
+    </fieldset>
 
-    <h2>Arms</h2>
+    <fieldset>
+        <legend><h2>Mouth</h2></legend>
+        <div class="input-wrapper">
+            <label for="xsy-lips">Lips</label>
+            <input type="text" id="xsy-lips" data-attribute="lips" value="<%- lips %>">
+        </div>
+        
+        <div class="input-wrapper">
+            <label for="xsy-teeth">Teeth</label>
+            <input type="text" id="xsy-teeth" data-attribute="teeth" value="<%- teeth %>">
+        </div>
 
-    <div class="input-wrapper">
-        <label for="xsy-arm-color">Color</label>
-        <input type="text" id="xsy-arm-color" data-attribute="armColor" value="<%- armColor %>">
-    </div>
+        <div class="input-wrapper">
+            <label for="xsy-tongue">Tongue</label>
+            <input type="text" id="xsy-tongue" data-attribute="tongue" value="<%- tongue %>">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend><h2>Arms</h2></legend>
+        <div class="input-wrapper">
+            <label for="xsy-arm-color">Color</label>
+            <input type="text" id="xsy-arm-color" data-attribute="armColor" value="<%- armColor %>">
+        </div>
 
 
-    <div class="input-wrapper">
-        <label for="xsy-arm-position">Position</label>
-        <select id="xsy-arm-position" data-attribute="armPosition">
-            <option value="up" <% if ( armPosition === 'up' ) { %>selected<% } %>>Up</option>
-            <option value="down" <% if ( armPosition === 'down' ) { %>selected<% } %>>Down</option>
-        </select>
-    </div>
+        <div class="input-wrapper">
+            <label for="xsy-arm-position">Position</label>
+            <select id="xsy-arm-position" data-attribute="armPosition">
+                <option value="up" <% if ( armPosition === 'up' ) { %>selected<% } %>>Up</option>
+                <option value="down" <% if ( armPosition === 'down' ) { %>selected<% } %>>Down</option>
+            </select>
+        </div>
+    </fieldset>
 
-    <h2>Hat</h2>
-    <div class="input-wrapper">
-        <label for="xsy-hat-top">Top</label>
-        <input type="text" id="xsy-hat-top" data-attribute="hatTop" value="<%- hatTop %>">
-    </div>
+    <fieldset>
+        <legend><h2>Hat</h2></legend>
+        <div class="input-wrapper">
+            <label for="xsy-hat-top">Top</label>
+            <input type="text" id="xsy-hat-top" data-attribute="hatTop" value="<%- hatTop %>">
+        </div>
 
-    <div class="input-wrapper">
-        <label for="xsy-hat-base">Base</label>
-        <input type="text" id="xsy-hat-base" data-attribute="hatBase" value="<%- hatBase %>">
-    </div>
+        <div class="input-wrapper">
+            <label for="xsy-hat-base">Base</label>
+            <input type="text" id="xsy-hat-base" data-attribute="hatBase" value="<%- hatBase %>">
+        </div>
 
-    <div class="input-wrapper">
-        <label for="xsy-hat-ribbon">Ribbon</label>
-        <input type="text" id="xsy-hat-ribbon" data-attribute="hatRibbon" value="<%- hatRibbon %>">
-    </div>
+        <div class="input-wrapper">
+            <label for="xsy-hat-ribbon">Ribbon</label>
+            <input type="text" id="xsy-hat-ribbon" data-attribute="hatRibbon" value="<%- hatRibbon %>">
+        </div>
+    </fieldset>
 </form>

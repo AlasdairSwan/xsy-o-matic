@@ -1,4 +1,4 @@
-<h1 class="title">Xsy-O-Matic</h1>
+<h1 class="simple">Xsy-O-Matic</h1>
 <div class="canvas">
     <svg class="xsy" width="100%" height="100%"></svg>
 </div>

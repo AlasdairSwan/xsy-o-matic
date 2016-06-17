@@ -10,9 +10,9 @@ define([
                 bodyColor: '#009de6',
                 armColor: '#009de6',
                 armPosition: 'up',
-                eyeballColor: '#f8fafb',
-                eyeLinerColor: '#3587be',
-                retinaColor: '#102a3a',
+                eyeball: '#f8fafb',
+                eyeLiner: '#3587be',
+                iris: '#102a3a',
                 lips: '#2f83ba',
                 teeth: '#e8e8e9',
                 tongue: '#c0225f',
@@ -23,18 +23,18 @@ define([
 
             sad: {
                 background: '#fff',
-                bodyColor: 'red',
-                armColor: 'red',
+                bodyColor: '#d5216a',
+                armColor: '#d5216a',
                 armPosition: 'down',
-                eyeballColor: '#f8fafb',
-                eyeLinerColor: '#3587be',
-                retinaColor: '#102a3a',
-                lips: '#2f83ba',
+                eyeball: '#f8fafb',
+                eyeLiner: '#701E3F',
+                iris: '#102a3a',
+                lips: '#701E3F',
                 teeth: '#e8e8e9',
                 tongue: '#c0225f',
                 hatTop: '#54575b',
                 hatBase: '#888b8e',
-                hatRibbon: '#be2863'
+                hatRibbon: '#009de6'
             },
 
             defaults: function() {

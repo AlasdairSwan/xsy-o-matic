@@ -11,8 +11,8 @@
                 el: '.xsy-editor',
 
                 events: {
-                    'blur input' : 'updateInput',
-                    'change select' : 'updateSelect',
+                    'blur input' : 'updateXsy',
+                    'change select' : 'updateXsy',
                     'click .js-default' : 'xsyPreset'
                 },
 
@@ -26,15 +26,7 @@
                     this.$el.html( this.tpl( this.model.toJSON() ) );
                 },
 
-                updateInput: function(event) {
-                    var $el = $(event.target),
-                        attr = $el.data('attribute'),
-                        val = $el.val();
-
-                    this.model.set( attr, val );
-                },
-
-                updateSelect: function(event) {
+                updateXsy: function(event) {
                     var $el = $(event.target),
                         attr = $el.data('attribute'),
                         val = $el.val();
