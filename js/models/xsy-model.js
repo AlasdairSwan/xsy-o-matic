@@ -14,6 +14,7 @@ define([
                 eyeLiner: '#3587be',
                 iris: '#102a3a',
                 lips: '#2f83ba',
+                mouth: 'happy',
                 teeth: '#e8e8e9',
                 tongue: '#c0225f',
                 hatTop: '#54575b',
@@ -30,6 +31,7 @@ define([
                 eyeLiner: '#701E3F',
                 iris: '#102a3a',
                 lips: '#701E3F',
+                mouth: 'sad',
                 teeth: '#e8e8e9',
                 tongue: '#c0225f',
                 hatTop: '#54575b',
@@ -43,6 +45,7 @@ define([
 
             preset: function(preset) {
                 this.set(this[preset]);
+                this.trigger('preset');
             }
         });
     }

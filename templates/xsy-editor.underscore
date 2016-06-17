@@ -1,7 +1,4 @@
 <form>
-    <button class="js-default btn" data-xsy="happy">Happy Xsy</button>
-    <button class="js-default btn sad" data-xsy="sad">Sad Xsy</button>
-    
     <fieldset>
         <legend><h2>Base</h2></legend>
         <div class="input-wrapper">
@@ -35,6 +32,14 @@
 
     <fieldset>
         <legend><h2>Mouth</h2></legend>
+        <div class="input-wrapper">
+            <label for="xsy-mouth">Mood</label>
+            <select id="xsy-mouth" data-attribute="mouth">
+                <option value="happy" <% if ( mouth === 'happy' ) { %>selected<% } %>>Happy</option>
+                <option value="sad" <% if ( mouth === 'sad' ) { %>selected<% } %>>Sad</option>
+            </select>
+        </div>
+
         <div class="input-wrapper">
             <label for="xsy-lips">Lips</label>
             <input type="text" id="xsy-lips" data-attribute="lips" value="<%- lips %>">

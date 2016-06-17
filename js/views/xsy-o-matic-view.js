@@ -13,6 +13,10 @@
             return Backbone.View.extend({
                 el: '.xsy-o-matic',
 
+                events: {
+                    'click .js-default' : 'xsyPreset'
+                },
+
                 tpl: _.template(pageTpl),
 
                 initialize: function() {
@@ -33,6 +37,12 @@
                     this.editView = new EditorView({
                         model: this.model
                     });
+                },
+
+                xsyPreset: function(event) {
+                    var xsy = $(event.target).data('xsy');
+                    event.preventDefault();
+                    this.model.preset(xsy);
                 }
             });
         }

@@ -1,5 +1,13 @@
-<h1 class="simple">Xsy-O-Matic</h1>
-<div class="canvas">
-    <svg class="xsy" width="100%" height="100%"></svg>
+<div class="display">
+    <h1>Xsy-O-Matic</h1>
+    <div class="canvas">
+        <svg class="xsy" width="100%" height="100%"></svg>
+    </div>
 </div>
-<div class="xsy-editor"></div>
+<div class="interface">
+    <div class="xsy-presets">
+        <button class="js-default btn" data-xsy="happy">Happy Xsy</button>
+        <button class="js-default btn sad" data-xsy="sad">Sad Xsy</button>
+    </div>
+    <div class="xsy-editor"></div>
+</div>

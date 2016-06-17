@@ -12,13 +12,13 @@
 
                 events: {
                     'blur input' : 'updateXsy',
-                    'change select' : 'updateXsy',
-                    'click .js-default' : 'xsyPreset'
+                    'change select' : 'updateXsy'
                 },
 
                 tpl: _.template(pageTpl),
 
                 initialize: function() {
+                    this.model.on('preset', this.render, this);
                     this.render();
                 },
 
@@ -32,12 +32,6 @@
                         val = $el.val();
 
                     this.model.set( attr, val );
-                },
-
-                xsyPreset: function(event) {
-                    var xsy = $(event.target).data('xsy');
-                    event.preventDefault();
-                    this.model.preset(xsy);
                 }
             });
         }
