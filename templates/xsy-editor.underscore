@@ -117,4 +117,41 @@
             <input type="text" id="xsy-ribbon-tail" data-attribute="ribbonTail" value="<%- ribbonTail %>">
         </div>
     </fieldset>
+
+    <fieldset>
+        <legend><h2>Custom</h2></legend>
+        <div class="input-wrapper">
+            <label for="xsy-custom-img">Image Url</label>
+            <input type="text" id="xsy-custom-img" data-attribute="custom1Img" value="<%- custom1Img %>">
+        </div>
+
+        <div class="input-wrapper">
+            <label for="xsy-custom-x">X Coordinate</label>
+            <input type="text" id="xsy-custom-x" data-attribute="custom1X" value="<%- custom1X %>">
+        </div>
+
+        <div class="input-wrapper">
+            <label for="xsy-custom-y">Y Coordinate</label>
+            <input type="text" id="xsy-custom-y" data-attribute="custom1Y" value="<%- custom1Y %>">
+        </div>
+
+        <div class="input-wrapper">
+            <label for="xsy-custom-width">Width</label>
+            <input type="text" id="xsy-custom-width" data-attribute="custom1Width" value="<%- custom1Width %>">
+        </div>
+
+        <div class="input-wrapper">
+            <label for="xsy-custom-height">Height</label>
+            <input type="text" id="xsy-custom-height" data-attribute="custom1Height" value="<%- custom1Height %>">
+        </div>
+
+        <div class="input-wrapper">
+            <label for="xsy-custom-inventory">Inventory</label>
+            <select id="xsy-custom-inventory" class="js-inventory">
+                <option value="false">pick an item</option>
+                <option value="flyingV">Flying V</option>
+                <option value="nicklezack">Nicklezack</option>
+            </select>
+        </div>
+    </fieldset>
 </form>

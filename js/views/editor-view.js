@@ -12,7 +12,8 @@
 
                 events: {
                     'blur input' : 'updateXsy',
-                    'change select' : 'updateXsy'
+                    'change select' : 'updateXsy',
+                    'change .js-inventory' : 'selectInventoryItem'
                 },
 
                 tpl: _.template(pageTpl),
@@ -24,6 +25,18 @@
 
                 render: function() {
                     this.$el.html( this.tpl( this.model.toJSON() ) );
+                },
+
+                selectInventoryItem: function(event) {
+                    var $el = $(event.target),
+                        val = $el.val();
+
+                    this.model.set(this.model.accessories[val]);
+                    $('#xsy-custom-img').val(this.model.get('custom1Img'));
+                    $('#xsy-custom-x').val(this.model.get('custom1X'));
+                    $('#xsy-custom-y').val(this.model.get('custom1Y'));
+                    $('#xsy-custom-height').val(this.model.get('custom1Height'));
+                    $('#xsy-custom-width').val(this.model.get('custom1Width'));
                 },
 
                 updateXsy: function(event) {

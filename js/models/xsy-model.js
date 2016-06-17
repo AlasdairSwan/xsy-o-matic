@@ -25,7 +25,12 @@ define([
                 ribbonLetter: '#d5216a',
                 ribbonFringe: '#d5216a',
                 ribbonTail: '#701E3F',
-                ribbonPosition: 'left'
+                ribbonPosition: 'left',
+                custom1Img: '',
+                custom1X: '',
+                custom1Y: '',
+                custom1Height: '',
+                custom1Width: ''
             },
 
             sad: {
@@ -48,7 +53,29 @@ define([
                 ribbonLetter: '#009de6',
                 ribbonFringe: '#009de6',
                 ribbonTail: '#3587be',
-                ribbonPosition: 'right'
+                ribbonPosition: 'right',
+                custom1Img: '',
+                custom1X: '',
+                custom1Y: '',
+                custom1Height: '',
+                custom1Width: ''
+            },
+
+            accessories: {
+                flyingV: {
+                    custom1Img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Epiphone_flying_v_guitar_svg.svg/800px-Epiphone_flying_v_guitar_svg.svg.png',
+                    custom1X: '10',
+                    custom1Y: '60',
+                    custom1Height: '200px',
+                    custom1Width: '300px'
+                },
+                nicklezack: {
+                    custom1Img: 'https://s3.amazonaws.com/uploads.hipchat.com/26537/894226/k3TMn65iKCbqbnR/Screen%20Shot%202016-06-17%20at%202.30.50%20PM.png',
+                    custom1X: '165',
+                    custom1Y: '100',
+                    custom1Height: '100px',
+                    custom1Width: '100px'
+                }
             },
 
             defaults: function() {

@@ -74,3 +74,7 @@
     </g>
 <% } %>
 
+<!-- Accessories -->
+<% if ( custom1Img ) { %>
+    <image xlink:href="<%- custom1Img %>" x="<%- custom1X %>" y="<%- custom1Y %>" height="<%- custom1Height %>" width="<%- custom1Width %>" />
+<% } %>
