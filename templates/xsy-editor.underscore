@@ -90,4 +90,31 @@
             <input type="text" id="xsy-hat-ribbon" data-attribute="hatRibbon" value="<%- hatRibbon %>">
         </div>
     </fieldset>
+
+    <fieldset>
+        <legend><h2>Ribbon</h2></legend>
+        <div class="input-wrapper">
+            <label for="xsy-ribbon">Show Ribbon</label>
+            <select id="xsy-ribbon" data-attribute="ribbon">
+                <option value="show" <% if ( ribbon === 'show' ) { %>selected<% } %>>true</option>
+                <option value="hide" <% if ( ribbon === 'hide' ) { %>selected<% } %>>false</option>
+            </select>
+        </div>
+        <div class="input-wrapper">
+            <label for="xsy-ribbon-bkg">Background</label>
+            <input type="text" id="xsy-ribbon-bkg" data-attribute="ribbonBkg" value="<%- ribbonBkg %>">
+        </div>
+        <div class="input-wrapper">
+            <label for="xsy-ribbon-letter">Letter</label>
+            <input type="text" id="xsy-ribbon-letter" data-attribute="ribbonLetter" value="<%- ribbonLetter %>">
+        </div>
+        <div class="input-wrapper">
+            <label for="xsy-ribbon-fringe">Fringe</label>
+            <input type="text" id="xsy-ribbon-fringe" data-attribute="ribbonFringe" value="<%- ribbonFringe %>">
+        </div>
+        <div class="input-wrapper">
+            <label for="xsy-ribbon-tail">Tail</label>
+            <input type="text" id="xsy-ribbon-tail" data-attribute="ribbonTail" value="<%- ribbonTail %>">
+        </div>
+    </fieldset>
 </form>

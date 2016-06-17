@@ -19,7 +19,13 @@ define([
                 tongue: '#c0225f',
                 hatTop: '#54575b',
                 hatBase: '#888b8e',
-                hatRibbon: '#be2863'
+                hatRibbon: '#be2863',
+                ribbon: 'show',
+                ribbonBkg: '#fff',
+                ribbonLetter: '#d5216a',
+                ribbonFringe: '#d5216a',
+                ribbonTail: '#701E3F',
+                ribbonPosition: 'left'
             },
 
             sad: {
@@ -36,11 +42,17 @@ define([
                 tongue: '#c0225f',
                 hatTop: '#54575b',
                 hatBase: '#888b8e',
-                hatRibbon: '#009de6'
+                hatRibbon: '#009de6',
+                ribbon: 'show',
+                ribbonBkg: '#fff',
+                ribbonLetter: '#009de6',
+                ribbonFringe: '#009de6',
+                ribbonTail: '#3587be',
+                ribbonPosition: 'right'
             },
 
             defaults: function() {
-                return this.happy
+                return this.happy;
             },
 
             preset: function(preset) {
